@@ -1,0 +1,27 @@
+@mixin button($bg){
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    background-color: $bg;
+}
+
+
+.btnCompleted{
+    @include button(var(--completed))
+}
+
+.btnUrgent{
+    @include button(var(--urgent))
+}
+
+.btnLater{
+    @include button(var(--later))
+}
+
+.btnToStudy{
+    @include button(var(--toStudy))
+}
+
+.btnImportant{
+    @include button(var(--important))
+}
