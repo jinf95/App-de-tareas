@@ -1,0 +1,28 @@
+.body-tasks {
+  height: auto;
+  margin-top: 1rem;
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+
+    .check{
+        // border-radius: 50%;
+
+    }
+
+    .task{
+        width: 100%;
+    }
+
+    .categorie {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+
+    }
+  }
+}

@@ -7,3 +7,10 @@
 
 @use './scss/base/base';
 @use './scss/base/resets';
+
+
+// components
+@use './scss/components/navbar';
+@use './scss/components/app';
+@use './scss/components/tasks';
+@use './scss/components/task';

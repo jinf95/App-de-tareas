@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import Table from "./components/Table";
+import Tasks from "./components/Tasks";
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <h1>Task Manager</h1>
-      <Table/>
+      <h1>Tasks Manager</h1>
+      <Tasks/>
     </div>
   );
 }

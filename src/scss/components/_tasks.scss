@@ -1,0 +1,15 @@
+.tasks{
+    width: 80%;
+
+    .header-tasks{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .footer-tasks{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+}
