@@ -7,14 +7,14 @@ const Tasks = () => {
       <div className="header-tasks">
         <button>Agregar Tarea</button>
       </div>
-      <div>
-        <Task />
-      </div>
-      <div className="footer-tasks">
-        <p>5 tareas</p>
-        <p>All</p>
-        <p>Completadas</p>
-      </div>
+      <section className="box">
+          <Task />
+        <div className="footer-tasks">
+          <p>5 tareas</p>
+          <p>Todas</p>
+          <p>Completadas</p>
+        </div>
+      </section>
     </div>
   );
 };

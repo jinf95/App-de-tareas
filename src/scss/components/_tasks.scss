@@ -4,12 +4,16 @@
     .header-tasks{
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .box{
+        border-bottom: 8px solid var(--darkSecondary);
+        border-radius: 10px 10px;
     }
 
     .footer-tasks{
         display: flex;
-        justify-content: space-around;
-        margin-top: 1rem;
+        justify-content: space-evenly;
+        padding: 2vh 0 2vh 0;
     }
 }

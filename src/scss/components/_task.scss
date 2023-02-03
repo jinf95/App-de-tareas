@@ -1,20 +1,19 @@
 .body-tasks {
   height: auto;
-  margin-top: 1rem;
 
   section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: .5rem;
+    border-bottom: 1px solid #000000;
+    padding: 2vh 0 2vh 0;
 
     .check{
-        // border-radius: 50%;
-
+        width: 6em;
+        height: 3em;
     }
 
     .task{
-        width: 100%;
+        padding-left: 3vw;
     }
 
     .categorie {
@@ -22,7 +21,6 @@
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
       transform: rotate(90deg);
-
     }
   }
 }
