@@ -1,28 +1,37 @@
 import React from "react";
 
-const CreateTask = () => {
+const CreateTask = ({isOpen, closeModal}) => {
+
+    const handleModalContainerClick = e => e.stopPropagation()
+
   return (
-    <div className="create-task">
-      <section className="form-createTask">
-        <h1>CREAR TAREA</h1>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Descripción de la tarea..."
-        />
-      </section>
-      <section className="cat-createTask">
-        <h2 className="linea"><span>Categorias</span></h2>
-        <div>
-          <button>Urgente</button>
-          <button>Importante</button>
-          <button>Completada</button>
-          <button>Estudiar</button>
-          <button>Más Tarde</button>
-        </div>
-      </section>
-      <button className="submit-task" type="submit">CREAR</button>
+    <div className={`create-container ${isOpen && "is-open"}`} onClick={closeModal}>
+      <div className="create-task" onClick={handleModalContainerClick}>
+        <section className="form-createTask">
+          <h1>CREAR TAREA</h1>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Descripción de la tarea..."
+          />
+        </section>
+        <section className="cat-createTask">
+          <h2 className="linea">
+            <span>Categorias</span>
+          </h2>
+          <div>
+            <button>Urgente</button>
+            <button>Importante</button>
+            <button>Completada</button>
+            <button>Estudiar</button>
+            <button>Más Tarde</button>
+          </div>
+        </section>
+        <button className="submit-task" type="submit">
+          CREAR
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,79 +1,99 @@
-.create-task {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
+.create-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  justify-content: center;
   align-items: center;
-  border: 2px solid #000;
-  margin: 2rem 0 2rem 0;
-  border-radius: 10px;
-  padding: 2vh 0 2vh 0;
+  background-color: #00000085;
+  display: none;
 
-  .form-createTask {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2vh;
-
-    h1 {
-      margin: 1vh 0 2vh 0;
-      font-size: 18px;
-    }
-
-    input {
-      padding: 0.5rem;
-      border-radius: 10px;
-      width: 85%;
-    }
-  }
-
-  .cat-createTask {
-    text-align: center;
-    margin: 2vh 0 5vh 0;
-
-    h2 {
-      font-size: 15px;
-      position: relative;
-      z-index: 1;
-
-      span {
-        background: #fff;
-        padding: 0 15px;
-      }
-    }
-    h2.linea:before {
-      border-top: 1px solid #000000;
-      content: "";
-      margin: 0 auto;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      z-index: -1;
-    }
-
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      button {
-        margin: 0.3rem;
-        width: 40%;
-        height: 4vh;
-      }
-    }
-  }
-  .submit-task {
+  .create-task{
     display: flex;
-    justify-content: center;
+    width: 80%;
+    flex-direction: column;
     align-items: center;
-    width: 30%;
-    height: 5vh;
-    padding: 0.5rem;
-    border: 2px solid var(--darkSecondary);
-    color: var(--darkSecondary);
+    border: 2px solid #000;
+    margin: 2rem 0 2rem 0;
     border-radius: 10px;
-    font-weight: bold;
+    padding: 2vh 0 2vh 0;
+    background-color: var(--lightPrimary);
+    position: relative;
+
+    .form-createTask {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2vh;
+  
+      h1 {
+        margin: 1vh 0 2vh 0;
+        font-size: 18px;
+      }
+  
+      input {
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 85%;
+      }
+    }
+  
+    .cat-createTask {
+      text-align: center;
+      margin: 2vh 0 5vh 0;
+  
+      h2 {
+        font-size: 15px;
+        position: relative;
+        z-index: 1;
+  
+        span {
+          background: #fff;
+          padding: 0 15px;
+        }
+      }
+      h2.linea:before {
+        border-top: 1px solid #000000;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+      }
+  
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+        button {
+          margin: 0.3rem;
+          width: 40%;
+          height: 4vh;
+        }
+      }
+    }
+    .submit-task {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 5vh;
+      padding: 0.5rem;
+      border: 2px solid var(--darkSecondary);
+      color: var(--darkSecondary);
+      border-radius: 10px;
+      font-weight: bold;
+    }
   }
+  
+}
+
+.create-container.is-open{
+  display: flex;
 }
