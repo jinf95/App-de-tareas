@@ -2,16 +2,26 @@ import React from "react";
 import CreateTask from "./CreateTask";
 import Task from "./Task";
 import { useModal } from "../hooks/useModal"
+import Categories from "./Categories";
+import Modal from "./Modal";
 
 const Tasks = () => {
   
-  const [isOpen, openModal, closeModal] = useModal(false)
+  const [isOpen1, openModal1, closeModal1] = useModal(false)
+  const [isOpen2, openModal2, closeModal2] = useModal(false)
+
 
   return (
     <div className="tasks">
       <div className="header-tasks">
-        <button onClick={openModal}>Agregar Tarea</button>
-        <CreateTask isOpen={isOpen} closeModal={closeModal}/>
+        <button onClick={openModal1}>Agregar Tarea</button>
+        <Modal isOpen={isOpen1} closeModal={closeModal1}>
+          <CreateTask/>
+        </Modal>
+        <button onClick={openModal2}>Agregar Categoria</button>
+        <Modal isOpen={isOpen2} closeModal={closeModal2}>
+          <Categories/>
+        </Modal>
       </div>
       <section className="box">
           <Task />

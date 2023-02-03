@@ -1,11 +1,10 @@
 import React from "react";
 
-const CreateTask = ({isOpen, closeModal}) => {
+const CreateTask = () => {
 
     const handleModalContainerClick = e => e.stopPropagation()
 
   return (
-    <div className={`create-container ${isOpen && "is-open"}`} onClick={closeModal}>
       <div className="create-task" onClick={handleModalContainerClick}>
         <section className="form-createTask">
           <h1>CREAR TAREA</h1>
@@ -32,7 +31,6 @@ const CreateTask = ({isOpen, closeModal}) => {
           CREAR
         </button>
       </div>
-    </div>
   );
 };
 
