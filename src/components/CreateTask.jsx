@@ -4,7 +4,7 @@ const CreateTask = () => {
   return (
     <div className="create-task">
       <section className="form-createTask">
-        <h3>Crear Tarea</h3>
+        <h1>CREAR TAREA</h1>
         <input
           type="text"
           name=""
@@ -13,7 +13,7 @@ const CreateTask = () => {
         />
       </section>
       <section className="cat-createTask">
-        <h4>Categorias</h4>
+        <h2 className="linea"><span>Categorias</span></h2>
         <div>
           <button>Urgente</button>
           <button>Importante</button>
@@ -22,7 +22,7 @@ const CreateTask = () => {
           <button>Más Tarde</button>
         </div>
       </section>
-      <button type="submit">Crear</button>
+      <button className="submit-task" type="submit">CREAR</button>
     </div>
   );
 };

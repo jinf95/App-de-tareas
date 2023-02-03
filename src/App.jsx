@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <h1>Gestor de Tareas</h1>
+      <h1 className="title">Gestor de Tareas</h1>
       <Tasks/>
       <CreateTask/>
     </div>
