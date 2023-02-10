@@ -1,19 +1,63 @@
-.tasks{
-    width: 80%;
+@use '../abstracts/mixins/media-queries' as *;
 
+.tasks{
+    width: 90%;
+    margin-bottom: 5vh;
+  
+    
     .header-tasks{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-bottom: 1rem;
+
+        @include desktop{
+            background-color: var(--lightSecondary);
+            border-radius: 10px;
+            border-bottom: 5px solid var(--darkSecondary);
+            padding: .5vh 0 .5vh 0;
+            margin-bottom: 1vh;
+        }
+        
+        .btn-add-task{
+            border-radius: 10px;
+            background-color: var(--lightSecondary);
+            border-bottom: 3px solid var(--darkSecondary);
+            padding: .3rem;
+            color: var(--text-color);
+            
+            @include desktop{
+                background-color: var(--darkSecondary);
+            }
+            
+        }
+        .btn-add-category{
+            border-radius: 10px;
+            background-color: var(--lightSecondary);
+            border-bottom: 3px solid var(--darkSecondary);
+            padding: .3rem;
+            color: var(--text-color);
+
+
+            @include desktop{
+                display: none;
+            }
+        }
     }
     .box{
         border-bottom: 8px solid var(--darkSecondary);
         border-radius: 10px 10px;
+        background-color: var(--lightSecondary);
     }
-
+    
     .footer-tasks{
         display: flex;
         justify-content: space-evenly;
         padding: 2vh 0 2vh 0;
+
+        p{
+            font-size: 13px;
+            font-weight: bold;
+            color: var(--darkSecondary);
+        }
     }
 }

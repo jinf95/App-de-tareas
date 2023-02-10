@@ -4,28 +4,25 @@ import { FcOk } from "react-icons/Fc";
 
 const Task = () => {
   return (
-    <div className="body-tasks">
+    <div className="body-task">
       <section>
       <FcOk className="check"/>
         <p className="task">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure
-          nihil necessitatibus
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p className="categorie">Categoria</p>
       </section>
       <section>
       <FcOk className="check"/>
         <p className="task">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure
-          nihil necessitatibus
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p className="categorie">Categoria</p>
       </section>
       <section>
         <FcOk className="check"/>
         <p className="task">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure
-          nihil necessitatibus
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <p className="categorie">Categoria</p>
       </section>

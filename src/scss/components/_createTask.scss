@@ -1,26 +1,23 @@
+@use '../abstracts/mixins/media-queries' as *;
+@use '../abstracts/mixins/create-container' as *;
+
 .create-container {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000085;
-  display: none;
+  @include createContainer;
 
   .create-task{
     display: flex;
     width: 80%;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #000;
-    margin: 2rem 0 2rem 0;
+    border: 2px solid var(--lightPrimary);
     border-radius: 10px;
     padding: 2vh 0 2vh 0;
-    background-color: var(--lightPrimary);
+    background-color: var(--lightSecondary);
     position: relative;
+
+    @include tablet{
+      width: 50%;
+    }
 
     .form-createTask {
       text-align: center;
@@ -30,6 +27,7 @@
       h1 {
         margin: 1vh 0 2vh 0;
         font-size: 18px;
+        color: var(--text-color);
       }
   
       input {
@@ -47,14 +45,16 @@
         font-size: 15px;
         position: relative;
         z-index: 1;
+        color: var(--text-color);
+
   
         span {
-          background-color: var(--lightPrimary) ;
+          background-color: var(--lightSecondary) ;
           padding: 0 15px;
         }
       }
       h2.linea:before {
-        border-top: 1px solid #000000;
+        border-top: 1px solid var(--lightPrimary);
         content: "";
         margin: 0 auto;
         position: absolute;

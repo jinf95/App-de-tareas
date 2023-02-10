@@ -16,7 +16,7 @@ const Categories = () => {
           <button>Más Tarde</button>
         </div>
         <button className="create-categorie" type="submit">
-          Agregar Categoría
+          AGREGAR CATEGORIA
         </button>
       </div>
   );

@@ -4,12 +4,16 @@
 :root{
     // fonts
     --font-poppins:'Poppins', sans-serif;
-    
-    // colors
+    --text-color: #F2F2F2;
+    // Dark Colors
    --darkPrimary: #071330;
    --darkSecondary: #0C4160;
+   
+    // Light Colors
    --lightPrimary: #C3CEDA;
    --lightSecondary: #738FA7;
+
+    // Buttons Colors
    --urgent: #db4021;
    --completed: #47c840;
    --later:#623cfa;

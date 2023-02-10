@@ -1,6 +1,8 @@
-// abstracts
 
-@use './scss/abstracts/mixins';
+// abstracts
+@use './scss/abstracts/mixins/media-queries';
+@use './scss/abstracts/mixins/create-container';
+@use './scss/abstracts/mixins/buttons';
 @use './scss/abstracts/variables';
 
 // base 

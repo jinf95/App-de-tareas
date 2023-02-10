@@ -1,19 +1,28 @@
-.body-tasks {
+.body-task {
   height: auto;
-
+  
   section {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #000000;
-    padding: 2vh 0 2vh 0;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--lightPrimary);
+    padding: 2vh 0 2vh 1vw;
+    min-height: 12vh;
+
+
 
     .check{
-        width: 6em;
-        height: 3em;
+      width: 35px;
+      height: 4vh;
+      
     }
 
     .task{
-        padding-left: 3vw;
+      flex-grow: 1;
+      padding-left: 2vw;
+      font-size: 13px;
+      color: var(--text-color);
+
     }
 
     .categorie {
@@ -21,6 +30,8 @@
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
       transform: rotate(90deg);
+      font-size: 70%;
+      font-weight: bold;
     }
   }
 }
