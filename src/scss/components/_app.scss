@@ -1,4 +1,3 @@
-@use '../abstracts/mixins/media-queries' as *;
 
 .App{
     display: flex;
@@ -17,18 +16,6 @@
         display: flex;
         justify-content: center;
         width: 90%;
-
-        aside{
-            .create-categories{
-                display: none;
-            
-                @include desktop{
-                    display: flex;
-                    flex-direction: column;
-                }
-
-            }
-        }
         
     }
 }

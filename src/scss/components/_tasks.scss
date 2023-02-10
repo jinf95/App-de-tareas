@@ -1,9 +1,8 @@
 @use '../abstracts/mixins/media-queries' as *;
+@use '../abstracts/mixins/buttons' as *;
 
 .tasks{
-    width: 90%;
-    margin-bottom: 5vh;
-  
+    width: 90%; 
     
     .header-tasks{
         display: flex;
@@ -19,23 +18,16 @@
         }
         
         .btn-add-task{
-            border-radius: 10px;
-            background-color: var(--lightSecondary);
-            border-bottom: 3px solid var(--darkSecondary);
-            padding: .3rem;
-            color: var(--text-color);
-            
+
+            @include btn-add;
+                       
             @include desktop{
                 background-color: var(--darkSecondary);
             }
             
         }
         .btn-add-category{
-            border-radius: 10px;
-            background-color: var(--lightSecondary);
-            border-bottom: 3px solid var(--darkSecondary);
-            padding: .3rem;
-            color: var(--text-color);
+           @include btn-add;
 
 
             @include desktop{

@@ -2,6 +2,7 @@
 // abstracts
 @use './scss/abstracts/mixins/media-queries';
 @use './scss/abstracts/mixins/create-container';
+@use './scss/abstracts/mixins/categories';
 @use './scss/abstracts/mixins/buttons';
 @use './scss/abstracts/variables';
 
@@ -17,4 +18,5 @@
 @use './scss/components/tasks';
 @use './scss/components/task';
 @use './scss/components/createTask';
-@use './scss/components/categories';
+@use './scss/components/modal-categories';
+@use './scss/components/main-categories';

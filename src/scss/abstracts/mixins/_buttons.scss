@@ -5,23 +5,10 @@
     background-color: $bg;
 };
 
-
-.btnCompleted{
-    @include button(var(--completed))
-}
-
-.btnUrgent{
-    @include button(var(--urgent))
-}
-
-.btnLater{
-    @include button(var(--later))
-}
-
-.btnToStudy{
-    @include button(var(--toStudy))
-}
-
-.btnImportant{
-    @include button(var(--important))
+@mixin btn-add{
+    border-radius: 10px;
+    background-color: var(--lightSecondary);
+    border-bottom: 3px solid var(--darkSecondary);
+    padding: .3rem;
+    color: var(--text-color);
 }
