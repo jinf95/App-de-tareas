@@ -9,11 +9,11 @@ const Categories = () => {
           <span>Categorias</span>
         </h2>
         <div>
-          <button>Urgente</button>
-          <button>Importante</button>
-          <button>Completada</button>
-          <button>Estudiar</button>
-          <button>Más Tarde</button>
+          <button className="btn-urgent">Urgente</button>
+          <button className="btn-important">Importante</button>
+          <button className="btn-completed">Completada</button>
+          <button className="btn-toStudy">Estudiar</button>
+          <button className="btn-later">Más Tarde</button>
         </div>
         <button className="create-categorie" type="submit">
           AGREGAR CATEGORIA

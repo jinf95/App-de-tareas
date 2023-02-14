@@ -1,8 +1,10 @@
 @mixin button($bg){
-    padding: 1rem;
-    margin: 1rem;
     font-weight: bold;
     background-color: $bg;
+    width: 80%;
+    height: 5vh;
+    margin: 1vh 0 1vh 0;
+    border-radius: 10px;
 };
 
 @mixin btn-add{
@@ -12,3 +14,19 @@
     padding: .3rem;
     color: var(--text-color);
 }
+
+.btn-urgent{
+    @include button(var(--urgent))
+  }
+  .btn-completed{
+    @include button(var(--completed))
+  }
+  .btn-later{
+    @include button(var(--later))
+  }
+  .btn-toStudy{
+    @include button(var(--toStudy))
+  }
+  .btn-important{
+    @include button(var(--important))
+  }
