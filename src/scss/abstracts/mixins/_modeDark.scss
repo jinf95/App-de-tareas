@@ -1,0 +1,6 @@
+@mixin inDarkMode {
+    $selector: #{&};
+    @at-root .App.dark #{$selector} {
+        @content
+    }
+}

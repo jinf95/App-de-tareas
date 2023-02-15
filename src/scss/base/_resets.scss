@@ -18,3 +18,10 @@ button{
     font-family: var(--font-poppins);
 }
 
+input[type=radio]{
+    display: none;
+}
+
+label{
+    margin: .5rem;
+}

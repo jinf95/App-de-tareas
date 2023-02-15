@@ -1,10 +1,16 @@
+@use '../abstracts/mixins/modeDark' as *;
 
 .App{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
+    background-color: var(--lightPrimary);
+
+    // @include inDarkMode{
+    //     background-color: #000;
+    // }
 
     .title{
         font-size: 30px;
@@ -18,4 +24,8 @@
         width: 90%;
         
     }
+}
+
+.App.dark{
+    background-color: var(--darkPrimary);
 }

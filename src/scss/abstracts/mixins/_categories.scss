@@ -69,5 +69,9 @@
       .create-container.is-open{
         display: $display;
       }
+
+      .create-categories.dark{
+        background-color: var(--darkSecondary);
+      }
     }
     

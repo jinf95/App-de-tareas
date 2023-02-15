@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const Categories = () => {
 
+    const {theme} = useContext(ThemeContext);
     const handleModalContainerClick = e => e.stopPropagation()
   return (
-      <div className="create-categories" onClick={handleModalContainerClick}>
+      <div className={`create-categories ${theme}`} onClick={handleModalContainerClick}>
         <h2 className="linea">
           <span>Categorias</span>
         </h2>
