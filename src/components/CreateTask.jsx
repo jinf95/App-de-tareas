@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const CreateTask = () => {
   const handleModalContainerClick = (e) => e.stopPropagation();
+  const {theme} = useContext(ThemeContext);
 
   return (
-    <div className="create-task" onClick={handleModalContainerClick}>
+    <div className={`create-task ${theme}`} onClick={handleModalContainerClick}>
       <section className="form-createTask">
         <h1>CREAR TAREA</h1>
         <input

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BsSun } from "react-icons/bs";
+import { HiSun } from "react-icons/hi";
 import { MdDarkMode } from "react-icons/md";
 import ThemeContext from "../context/ThemeContext";
 
@@ -8,19 +8,31 @@ const Navbar = () => {
 
   return (
     <nav>
-      <label htmlFor="input-light">
-        <BsSun />
-      </label>
-      <button
-        type="radio"
-        onClick={handleTheme}
-        value="light"
-        id="input-light"
-      />
-      <label htmlFor="input-dark">
-        <MdDarkMode />
-      </label>
-      <input type="radio" onClick={handleTheme} value="dark" id="input-dark" />
+      {theme === "dark" ? (
+        <div>
+          <label htmlFor="input-light">
+            <HiSun className="icono-sol" />
+          </label>
+          <input
+            type="radio"
+            onClick={handleTheme}
+            value="light"
+            id="input-light"
+          />
+        </div>
+      ) : (
+        <div>
+          <label htmlFor="input-dark">
+            <MdDarkMode />
+          </label>
+          <input
+            type="radio"
+            onClick={handleTheme}
+            value="dark"
+            id="input-dark"
+          />
+        </div>
+      )}
     </nav>
   );
 };

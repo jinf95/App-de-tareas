@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FcOk } from "react-icons/Fc";
-
+import ThemeContext from "../context/ThemeContext";
 
 const Task = () => {
+
+  const {theme} = useContext(ThemeContext);
+
   return (
-    <div className="body-task">
+    <div className={`body-task ${theme}`}>
       <section>
       <FcOk className="check"/>
         <p className="task">

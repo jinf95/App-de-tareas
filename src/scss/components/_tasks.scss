@@ -13,7 +13,7 @@
             background-color: var(--lightSecondary);
             border-radius: 10px;
             border-bottom: 5px solid var(--darkSecondary);
-            padding: .5vh 0 .5vh 0;
+            padding: 1vh 0 1vh 0;
             margin-bottom: 1vh;
         }
         
@@ -50,6 +50,35 @@
             font-size: 13px;
             font-weight: bold;
             color: var(--darkSecondary);
+        }
+    }
+}
+
+// DARK
+
+.tasks.dark{
+    .header-tasks{       
+        @include desktop{
+            background-color: var(--darkSecondary);
+            border-bottom: 5px solid var(--lightSecondary);
+        }        
+        .btn-add-task{                       
+            @include desktop{
+                background-color: var(--text-color);
+                color: var(--darkSecondary);
+                border-color: 2px solid var(--darkSecondary);
+                font-weight: bold;
+
+            }
+       }       
+    }
+    .box{
+        border-bottom: 8px solid var(--lightSecondary);
+        background-color: var(--darkSecondary);
+    }
+    .footer-tasks{
+        p{
+               color: var(--lightSecondary);
         }
     }
 }

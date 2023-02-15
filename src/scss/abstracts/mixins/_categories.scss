@@ -70,8 +70,25 @@
         display: $display;
       }
 
+      // DARK
+
       .create-categories.dark{
         background-color: var(--darkSecondary);
+        border: 2px solid var(--darkPrimary);
+        border-bottom: 8px solid var(--lightSecondary);
+
+        h2{
+          span{
+            background-color: var(--darkSecondary);
+          }
+        }
+
+        .create-categorie{
+          background-color: var(--text-color);
+          color: var(--darkSecondary);
+          border-color: var(--darkSecondary);
+
+        }
       }
     }
     

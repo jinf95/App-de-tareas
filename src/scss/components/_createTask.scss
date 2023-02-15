@@ -97,3 +97,17 @@
 .create-container.is-open{
   display: flex;
 }
+
+// DARK
+.create-task.dark{
+  border: 2px solid var(--darkPrimary);
+  background-color: var(--darkSecondary);
+
+  .cat-createTask {
+    h2 {     
+      span {
+        background-color: var(--darkSecondary) ;
+      }
+    }    
+  }
+}
